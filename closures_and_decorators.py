@@ -16,12 +16,10 @@ Mr. Robert Bustle
 '''
 import operator
 m=[]
-def sortSecond(val): 
-    return int(val[2])  
 def person_lister(f):
     def inner(people):
         #print(people)
-        people.sort(key=sortSecond)
+        people.sort(key=lambda x:int(x[2]))
         #print(people)
         for i in people:
             k=f(i)
