@@ -1,0 +1,27 @@
+N=int(input())
+v=[]
+for n in range(1,N+1):
+    count=0
+    l=[]
+    f=[]
+    m=[]
+    for a in range(1,n+1):
+        if n%a==0:
+            f.append(a)
+    for i in range(1,n+1):
+        l=[]
+        for j in range(1,i+1):
+            if i%j==0:
+                l.append(j)
+        m.append(l)
+    #print(f)           
+    #print(m)
+    h=set(f)
+    for b in m:
+        if h.intersection(set(b))=={1}:
+            count+=1
+    #print(count)
+    v.append(count)
+s=' '
+s=s.join(map(str,v))
+print(s)
