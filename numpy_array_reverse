@@ -1,0 +1,9 @@
+import numpy
+
+def arrays(arr):
+    k=numpy.array(arr,dtype='float64')    #dtype converts string values to float type here
+    return k[::-1]
+
+arr = input().strip().split(' ')
+result = arrays(arr)
+print(result)
