@@ -14,7 +14,7 @@ SAMPLE OUTPUT:
 82.0 
 90.0 
 85.5   
-'''
+
 
 N,X=list(map(int,input().split()))
 s=[]
@@ -30,4 +30,14 @@ for a in range(N):
     u.append(m)
     count+=1
 for i in u:
+    print(sum(i)/X)
+'''
+N,X=list(map(int,input().split()))
+s=[]
+for i in range(X):
+    l=list(map(float,input().split()))
+    s.append(l)
+for i in s:
+    k=zip(*s)
+for i in k:
     print(sum(i)/X)
