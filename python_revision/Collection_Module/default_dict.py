@@ -1,3 +1,7 @@
+'''
+https://www.hackerrank.com/challenges/defaultdict-tutorial/problem
+'''
+
 n,m = list(map(int, input().split()))
 
 from collections import defaultdict
